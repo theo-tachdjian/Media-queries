@@ -1,0 +1,48 @@
+.top h1{
+    padding: 1.6em;
+    margin-left: 100px;
+    font-size: 1.5em;
+}
+
+.org{
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-evenly;
+}
+
+.borely,.pharo,.longchamps,.pastre,.centenaire,.puget{
+    width: 30vw;
+    background-color: rgba(205, 243, 147, 0.534);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.borely:hover,.pharo:hover,.longchamps:hover,.pastre:hover,.centenaire:hover,.puget:hover{
+    background-color: rgb(93, 218, 93);
+}
+
+/* MEDIA QUERIES FOR TABLET VIEW */
+@media all and (max-device-width: 820px) {
+	.top h1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .borely,.pharo,.longchamps,.pastre,.centenaire,.puget {
+        width: 45vw;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-device-width: 480px) {
+	.top h1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .borely,.pharo,.longchamps,.pastre,.centenaire,.puget {
+        width: 80vw;
+    }
+}

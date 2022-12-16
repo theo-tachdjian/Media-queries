@@ -1,0 +1,56 @@
+/* main */
+
+.mainimg h1{
+    padding: 1.6em;
+    margin-left: 100px;
+    font-size: 1.5em;
+}
+
+.org{
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-evenly;
+}
+
+.title{
+    margin-left: 10px;
+    padding: 2em;
+    font-size: 2em;
+}
+
+.en-vau,.sugiton,.callelongue,.marseilleveyre,.morgiou,.sormiou{
+    width: 30vw;
+    background-color: rgba(205, 243, 147, 0.534);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.en-vau:hover,.sugiton:hover,.morgiou:hover,.sormiou:hover,.callelongue:hover,.marseilleveyre:hover{
+    background-color: rgb(176, 230, 212);
+}
+
+/* MEDIA QUERIES FOR TABLET VIEW */
+@media all and (max-device-width: 820px) {
+	.mainimg h1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .en-vau,.sugiton,.callelongue,.marseilleveyre,.morgiou,.sormiou {
+        width: 45vw;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-device-width: 480px) {
+	.mainimg h1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .en-vau,.sugiton,.callelongue,.marseilleveyre,.morgiou,.sormiou {
+        width: 80vw;
+    }
+}
